@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>俄罗斯方块</title>
+<style type="text/css">
+html, body { height: 100%; overflow: hidden; }
+body { margin: 0; background: #000; text-align: center; }
+canvas { background: url(images/pg.jpg) no-repeat; height: 100%; -webkit-background-size: cover;
+background-size: cover; }
+</style>
+</head>
+<body>
+	<canvas width="320" height="426" id="canvas"></canvas>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/simpleInheritance.js"></script>
+	<script src="js/StaticResourceUtil.js"></script>
+	<script src="js/FrameUtil.js"></script>
+	<script src="js/CellBlock.js"></script>
+	<script src="js/Map.js"></script>
+	<script src="js/ActiveBlock.js"></script>
+	<script src="js/Game.js"></script>
+	<script>
+	var game = new Game({
+		canvasId: 'canvas',
+		fps: 50
+	});
+	</script>
+</body>
+</html>
